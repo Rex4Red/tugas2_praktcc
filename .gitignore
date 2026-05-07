@@ -1,27 +1,2 @@
 node_modules/
 .env
-
-# Auto-generated agent rules (personalized per developer)
-.brainsync/agent-rules.md
-
-# Auto-generated AI agent exclusions
-.cursorrules
-.clineRules
-.agent/
-.windsurfrules
-.gemini/
-.cline/
-
-AGENT.md
-CLAUDE.md
-.agent-mem/
-
-# Dev/tool files
-.brainsync/
-.agents/
-.cursor/
-.vscode/
-.mcp.json
-.mcp.json.bak
-tutorial/
-referensi/

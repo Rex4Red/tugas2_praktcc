@@ -1,0 +1,38 @@
+{
+  "project": {
+    "enabled": true,
+    "lastGenerated": "2026-05-07T18:05:43.734Z",
+    "observationCount": 820,
+    "skillCount": 0,
+    "domain": "project",
+    "triggerGlobs": [
+      "**/*"
+    ],
+    "description": "Project for tugas2_praktcc. 24 gotchas, 776 conventions."
+  },
+  "java": {
+    "enabled": true,
+    "lastGenerated": "2026-05-07T18:05:43.734Z",
+    "observationCount": 2,
+    "skillCount": 0,
+    "domain": "java",
+    "triggerGlobs": [
+      "**/*.java"
+    ],
+    "description": "Java for tugas2_praktcc. ."
+  },
+  "config": {
+    "enabled": true,
+    "lastGenerated": "2026-05-07T18:05:43.734Z",
+    "observationCount": 3,
+    "skillCount": 0,
+    "domain": "config",
+    "triggerGlobs": [
+      "**/*.yaml",
+      "**/*.yml",
+      "**/*.json",
+      "**/*.toml"
+    ],
+    "description": "Config for tugas2_praktcc. 1 conventions."
+  }
+}
