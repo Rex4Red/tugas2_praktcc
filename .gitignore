@@ -1,2 +1,25 @@
 node_modules/
 .env
+.env.example
+
+# IDE & Tool files
+.cursor/
+.vscode/
+.agent/
+.agents/
+.agent-mem/
+.brainsync/
+.mcp.json
+.mcp.json.bak
+.windsurfrules
+.cursorrules
+.clineRules
+.cline/
+.gemini/
+AGENT.md
+CLAUDE.md
+
+# Dev files
+api.rest
+tutorial/
+referensi/
