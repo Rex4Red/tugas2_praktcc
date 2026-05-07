@@ -2,7 +2,7 @@
 GET http://localhost:3010/api/v1/notes
 
 ### Get Note by ID
-GET http://localhost:3010/api/v1/notes/1
+GET http://localhost:3010/api/v1/notes/6
 
 ### Create Note
 POST http://localhost:3010/api/v1/notes
@@ -23,13 +23,13 @@ Content-Type: application/json
 }
 
 ### Update Note
-PUT http://localhost:3010/api/v1/notes/1
+PUT http://localhost:3010/api/v1/notes/9
 Content-Type: application/json
 
 {
-  "judul": "Catatan Pertama (Updated)",
+  "judul": "tes (Updated)",
   "isi": "Isi catatan pertama yang sudah diupdate"
 }
 
 ### Delete Note
-DELETE http://localhost:3010/api/v1/notes/1
+DELETE http://localhost:3010/api/v1/notes/9

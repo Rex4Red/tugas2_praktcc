@@ -1,6 +1,5 @@
 // Import Package dan File
 const express = require("express");
-const path = require("path");
 const sequelize = require("./config/database");
 const noteRoutes = require("./routes/noteRoutes");
 
@@ -8,14 +7,15 @@ const noteRoutes = require("./routes/noteRoutes");
 const app = express();
 const cors = require("cors");
 
-// Izinkan semua origin (untuk development)
-app.use(cors());
+// CORS: izinkan frontend dari App Engine
+app.use(cors({
+  origin: process.env.FRONTEND_URL || '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type']
+}));
 
 // Middleware untuk parsing JSON
 app.use(express.json());
-
-// Serve frontend static files
-app.use(express.static(path.join(__dirname, "../frontend")));
 
 // Route dasar untuk testing API
 app.get("/api", (req, res) => {
