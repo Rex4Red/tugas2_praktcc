@@ -1,5 +1,5 @@
 // ===== Configuration =====
-const API_BASE = `${window.location.origin}/api/v1/notes`;
+const API_BASE = "https://be-tugas3-tcc-161-720084965883.us-central1.run.app/api/v1/notes";
 
 // ===== DOM Elements =====
 const noteForm = document.querySelector("#note-form");
