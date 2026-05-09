@@ -18,8 +18,32 @@ app.use(cors({
 app.use(express.json());
 
 // Route dasar untuk testing API
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "Selamat datang di Notes API!",
+    endpoints: {
+      "GET /api/v1/notes": "Lihat semua catatan",
+      "GET /api/v1/notes/:id": "Lihat detail catatan",
+      "POST /api/v1/notes": "Tambah catatan baru",
+      "PUT /api/v1/notes/:id": "Edit catatan",
+      "DELETE /api/v1/notes/:id": "Hapus catatan"
+    }
+  });
+});
+
 app.get("/api", (req, res) => {
-  res.send("Hello World! - Notes API is running");
+  res.json({
+    success: true,
+    message: "Selamat datang di Notes API!",
+    endpoints: {
+      "GET /api/v1/notes": "Lihat semua catatan",
+      "GET /api/v1/notes/:id": "Lihat detail catatan",
+      "POST /api/v1/notes": "Tambah catatan baru",
+      "PUT /api/v1/notes/:id": "Edit catatan",
+      "DELETE /api/v1/notes/:id": "Hapus catatan"
+    }
+  });
 });
 
 // Setting Routes
